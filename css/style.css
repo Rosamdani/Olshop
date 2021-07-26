@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+/* Navbar */
+nav{
+    width: 100%;
+    height: 110px;
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    background-color: rgb(0, 102, 255);
+}
+nav .atas{
+    display: flex;
+    width: 100%;
+    z-index: 10000;
+    background-color: rgb(0, 94, 235);
+    position: relative;
+    height: 30px;
+    box-sizing: border-box;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+}
+nav .atas .kiri img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+nav .atas .kiri ul li:not(:nth-child(1)){
+    margin: 0 6px;
+}
+nav .atas .kiri ul li:nth-child(3) img, nav .atas .kiri ul li:nth-child(4) img{
+    width: 19px;
+    height: 19px;
+}
+nav .atas .kiri ul{
+    display: flex;
+    position: relative;
+    width: 190px;
+    align-items: center;
+    height: 20px;
+    justify-content: space-around;
+}
+nav .atas .kiri ul li{
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+}
+nav .atas .kiri ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav .atas .kanan ul{
+    display: flex;
+    font-family: Inter;
+    list-style: none;
+    color: white;
+    font-weight: 800;
+    font-size: 1.1em;
+    width: 130px;
+    justify-content: space-between;
+}
+nav .atas .kanan ul a{
+    text-decoration: none;
+    color: white;
+}
+nav .navigation{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 50px;
+}
+nav .navigation .cari{
+    width: 60%;
+    background-color: whitesmoke;
+    display: flex;
+    position: relative;
+}
+nav .navigation .cari input{
+    width: 90%;
+    height: 35px;
+    font-size: 1em;
+    padding: 0 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+nav .navigation .cari button{
+    width: 10%;
+    border: none;
+    height: 30px;
+    margin: 2px 0;
+    margin-right: 4px;
+    background-color: rgb(0, 94, 235);;
+    box-sizing: border-box;
+    outline: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+nav .navigation .logo{
+    color: white;
+    font-size: 1.3em;
+    font-family: Montserrat;
+}
+nav .navigation .chart img{
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+}
+nav .menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 70px;
+}
+nav .menu .kiri{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .menu .kiri ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 500px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+nav .menu .kiri ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Inter;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: white;
+    box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.733);
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+}
+.hero .atas{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.hero .kiri{
+    width: 64%;
+    height: 250px;
+}
+.hero .kiri .slider img{
+    object-fit: cover;
+}
+.hero .kanan{
+    width: 36%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero .kanan img{
+    width: 100%;
+    margin-left: 10px;
+    height: 49%;
+    object-fit: cover;
+    margin-bottom: 4px;
+}
+.hero .konten{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .konten .box-1{
+    width: 130px;
+    height: 100px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hero .konten .box-1 .logo{
+    width: 100%;
+    height: 60%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.hero .konten .box-1 .logo img{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    filter: invert(0);
+    color: rgb(0, 102, 255);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero .konten .box-1 a{
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+    font-family: Inter;
+}
+.hero .konten .box-1 a:hover .logo, .hero .konten .box-1 a:hover p{
+    transition: 0.2s ease-in-out;
+    transform: translateY(-4px);
+}
+
+/* Gender  */
+.gender{
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.gender .box-2{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.gender .box-2 .box-3{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gender .box-2 .men{
+    background-image: url("../asset/img/men.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gender .box-2 .box-3 button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-family: Helvetica;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+.gender .box-2 .women button{
+    background-color: rgb(48, 217, 247);
+    box-shadow: inset 0 0 0 0 rgb(4, 8, 255);
+    color: rgb(0, 0, 0);
+}
+.gender .box-2 .women button:hover{
+    box-shadow: inset 100px 0 0 0 rgb(8, 4, 255);
+    color: rgb(255, 255, 255);
+}
+.gender .box-2 .men button{
+    background-color: royalblue;
+    box-shadow: inset 0 0 0 0 rgb(4, 226, 255);
+    color: white;
+}
+.gender .box-2 .men button:hover{
+    box-shadow: inset 100px 0 0 0 rgb(4, 226, 255);
+    color: #000;
+}
+.gender .box-2 .women{
+    background-image: url("../asset/img/women.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+/* Kategori  */
+
+.kategori{
+    width: 98%;
+    box-sizing: border-box;
+    height: auto;
+    margin: 30px auto;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+    padding: 10px 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+.kategori .text{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+}
+.kategori .text img{
+    width: 20px;
+    margin: 0 20px 0 0;
+    height: 20px;
+}
+.kategori .text h4{
+    font-family: Arial;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+.kategori .box-1{
+    width: 96%;
+    height: auto;
+    position: relative;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.kategori .box-1 .box-2{
+    width: 120px;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    border: solid 0.2px rgba(0, 0, 0, 0.103);
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.kategori .box-1 a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.422);
+}
+.kategori .box-1 a:hover .box-2{
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.203);
+}
+.kategori .box-1 .box-2 .foto{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 100%;
+}
+.kategori .box-1 .box-2 .foto img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+/* Footer */
+
+.foot{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin: 40px 0 0 0 0;
+    border-top: solid 6px blue;
+}
+.foot .box-1{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+.foot .box-1 .box-2{
+    width: calc(99.9%/3);
+    height: 300px;
+    box-sizing: border-box;
+    padding: 30px 100px;
+}
+.foot .box-1 .box-2 ul li{
+    list-style: none;
+}
+.foot .box-1 .box-2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Inter;
+    line-height: 30px;
+}
+.foot .box-1 .box-2 p{
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.foot .box-1 .box-2 ul li{
+    list-style: none;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    padding-top: 10px 0;
+    justify-content: center;
+}
