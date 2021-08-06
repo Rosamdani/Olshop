@@ -1,3 +1,17 @@
+<?php
+    session_start();
+    $conn = mysqli_connect("localhost","root","","olshop");
+
+    if(@$_SESSION['login_status'] == true){
+        $default = "asset/profil/default.jpg";
+        if($_SESSION['foto']!=" "){
+            $default = "asset/profil/".$_SESSION['foto'].".jpg";
+        }
+        if($_SESSION['username']!=""){
+            $username = $_SESSION['username'];
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,11 +35,23 @@
                 </ul>
             </div>
             <div class="kanan">
-                <ul>
+                <ul id="userr">
                     <li><a href="login.php">Login</a></li>
                     <li><span></span></li>
                     <li><a href="signup.php">Daftar</a></li>
                 </ul>
+                <div id="userr1">
+                    <div class="dropbtn">
+                        <div class="konten">
+                            <img src=<?='"'.$default.'"'?> alt="">
+                            <p><?=$username?></p>
+                        </div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="profil.php">Profil</a>
+                        <a href="logout.php">Logout</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="navigation">
@@ -372,3 +398,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script  src="js/function.js"></script>
 </html>
+<?php
+    if($_SESSION['login_status']==true){
+        echo '<script>document.getElementById("userr").style.display = "none"</script>';
+        echo '<script>document.getElementById("userr1").style.display = "flex"</script>';
+    }else{
+        echo '<script>document.getElementById("userr").style.display = "flex"</script>';
+        echo '<script>document.getElementById("userr1").style.display = "none"</script>';
+    }
+?>
