@@ -1,0 +1,60 @@
+.menu .kiri ul, .menu .kiri ol {
+    list-style: none
+}
+.main {
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    overflow: hidden;
+    color: #fff;
+}
+.slider {
+    position: relative;
+}
+.slider .slider-parent {
+    padding: 0;
+    display: flex;
+}
+.slider .slider-parent .images-list {
+    background-size: cover;
+}
+.slider .slider-parent .images-list:first-of-type, .slider .slider-parent .images-list:last-of-type {
+    background-image: url(https://images.pexels.com/photos/462146/pexels-photo-462146.jpeg)
+}
+.slider .slider-parent .images-list:nth-of-type(2) {
+    background-image: url(https://images.pexels.com/photos/268261/pexels-photo-268261.jpeg)
+}
+.slider .slider-parent .images-list:nth-of-type(3) {
+    background-image: url(https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg)
+}
+.slider .slider-parent .images-list:nth-of-type(4) {
+    background-image: url(https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg)
+}
+.slider .slider-parent .images-list:nth-of-type(5) {
+    background-image: url(https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg)
+}
+.slider .buttom-circles {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 10px
+}
+.slider .buttom-circles .buttom-circles-list {
+    display: inline-block
+}
+.slider .buttom-circles .buttom-circles-list:hover .fa:before, .slider .buttom-circles .buttom-circles-list.slider-active .fa:before {
+    content: "\f111";
+}
+.slider .fa-chevron-right{
+    position: absolute;
+    top: 24%;
+    left: 92%;
+    cursor: pointer;
+}
+.slider .fa-chevron-left{
+    position: absolute;
+    top: 24%;
+    left: 5px;
+    cursor: pointer;
+}
+ 

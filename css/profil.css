@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Montserrat:ital,wght@0,100;0,200;1,100;1,600&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+body{
+    background-color: rgb(236, 236, 236);
+}
+/* Navbar */
+nav{
+    width: 100%;
+    height: 110px;
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    background-color: rgb(0, 102, 255);
+}
+nav .atas{
+    display: flex;
+    width: 100%;
+    z-index: 10000;
+    background-color: rgb(0, 94, 235);
+    position: relative;
+    height: 40px;
+    box-sizing: border-box;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+}
+nav .atas .kiri img{
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+}
+nav .atas .kiri ul li:not(:nth-child(1)){
+    margin: 0 6px;
+}
+nav .atas .kiri ul li:nth-child(3) img, nav .atas .kiri ul li:nth-child(4) img{
+    width: 19px;
+    height: 19px;
+}
+nav .atas .kiri ul{
+    display: flex;
+    position: relative;
+    width: 190px;
+    align-items: center;
+    height: 20px;
+    justify-content: space-around;
+}
+nav .atas .kiri ul li{
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+}
+nav .atas .kiri ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav .atas .kanan #userr1{
+    display: flex;
+}
+nav .atas .kanan .dropbtn .konten{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+nav .atas .kanan .dropbtn .konten::before{
+    content: '>';
+    position: absolute;
+    top: 0px;
+    right: -15px;
+    font-weight: bolder;
+    color: rgb(182, 182, 182);
+    transform: rotate(90deg);
+}
+nav .atas .kanan .dropbtn .konten img{
+    width: 25px;
+    margin-right: 10px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+  }
+  
+  #userr1 {
+    position: relative;
+    display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(0, 102, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a {background-color: rgb(255, 255, 255);}
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  #userr1:hover .dropdown-content {display: block;}
+  
+nav .atas .kanan ul a{
+    text-decoration: none;
+    color: white;
+}
+nav .navigation{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 50px;
+}
+nav .navigation .cari{
+    width: 60%;
+    background-color: whitesmoke;
+    display: flex;
+    position: relative;
+}
+nav .navigation .cari input{
+    width: 90%;
+    height: 35px;
+    font-size: 1em;
+    padding: 0 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+nav .navigation .cari button{
+    width: 10%;
+    border: none;
+    height: 30px;
+    margin: 2px 0;
+    margin-right: 4px;
+    background-color: rgb(0, 94, 235);;
+    box-sizing: border-box;
+    outline: none;
+    color: whitesmoke;
+    cursor: pointer;
+}
+nav .navigation .logo{
+    color: white;
+    font-size: 1.3em;
+    font-family: Montserrat;
+}
+nav .navigation .chart img{
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+}
+nav .menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 70px;
+}
+nav .menu .kiri{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .menu .kiri ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 500px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+nav .menu .kiri ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Inter;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container .side{
+    width: 20%;
+    height: 600px;
+}
+.container .konten{
+    width: 80%;
+    height: 550px;
+    overflow: hidden;
+    background-color: white;
+    margin: 30px 10px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+}
+.container .konten #box-1,.container .konten #box-2{
+    width: 100%;
+    transition: 0.7s;
+    font-family: Inter;
+    height: 100%;
+}
+.container .konten #box-1 h4{
+    font-family: Inter;
+    margin: 20px 0 0 30px;
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.container .konten #box-1 form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    margin: 40px auto;
+}
+.container .konten #box-1 form .boxxx{
+    width: 100%;
+    margin: 10px 0;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.container .konten #box-1 form .boxxx .label{
+    width: 20%;
+}
+.container .konten #box-1 form .boxxx .label label{
+    font-family: Montserrat;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.container .konten #box-1 form .boxxx .input-control{
+    width: 70%;
+    padding: 7px 12px;
+    font-family: Inter;
+    box-shadow: inset 0 0 2px 0 rgba(0,0,0,0.2);
+    border-radius: 4px;
+    border: none;
+}
+.container .konten #box-1 form .boxxx .box3{
+    width: 150px;
+    margin: 0 3px;
+}
+.container .konten #box-1 form .boxxx .box3 .input-control{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container .konten #box-1 form .boxxx .btn-submit{
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: rgb(20, 102, 255);
+    font-family: Inter;
+    color: white;
+    border: none;
+    margin: 50px 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* footer  */
+
+.foot{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin: 40px 0 0 0 0;
+    border-top: solid 6px blue;
+}
+.foot .box-1{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px auto;
+}
+.foot .box-1 .box-2{
+    width: calc(99.9%/3);
+    height: 300px;
+    box-sizing: border-box;
+    padding: 30px 100px;
+}
+.foot .box-1 .box-2 ul li{
+    list-style: none;
+}
+.foot .box-1 .box-2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Inter;
+    line-height: 30px;
+}
+.foot .box-1 .box-2 p{
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.foot .box-1 .box-2 ul li{
+    list-style: none;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    padding-top: 10px 0;
+    justify-content: center;
+}
